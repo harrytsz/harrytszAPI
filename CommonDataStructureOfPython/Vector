@@ -1,0 +1,16 @@
+class Vector:
+    def __init__(self, d):
+        '''Create a D-dimensional vector of zeros.'''
+        self._coords = [0] * d
+    
+    def __len__(self):
+        '''Return the dimension of the Vector.'''
+        return len(self._coords)
+    
+    def __getitem__(self, j):
+        '''Return jth coordinate of vector.'''
+        return self._coords[j]
+    
+    def __setitem__(self, j, val):
+        '''Set jth coordinate of vector to given value.'''
+        self._coords[j] = val
